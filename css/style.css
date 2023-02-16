@@ -74,7 +74,8 @@
 /*Este es el estilo del Index*/
 .about {
   height: 450px;
-  width: 100%;
+  width: 95%;
+  margin: 10px auto;
   padding: 30px; }
   .about .container_about {
     display: grid;
@@ -130,6 +131,7 @@
   background-color: #c9c5c5;
   height: auto; }
   .community .container_community {
+    margin-left: 20px;
     padding: 20px;
     width: 90%;
     display: grid;
@@ -248,7 +250,7 @@ footer {
         text-decoration: none; }
 
 .news .texto_news {
-  padding: 30px; }
+  padding: 35px; }
 
 .news .carousel-inner {
   height: 500px; }
@@ -298,7 +300,8 @@ footer {
       width: 630px;
       height: 350px; }
   .container_pagenews .text_princ {
-    grid-area: text_princ; }
+    grid-area: text_princ;
+    align-self: flex-start; }
     .container_pagenews .text_princ p {
       text-align: justify; }
   .container_pagenews .text_img1 {
@@ -320,7 +323,7 @@ footer {
 
 .help .container_help {
   margin: 20px auto;
-  padding: 100px;
+  padding: 90px;
   width: 90%;
   height: 440px;
   display: grid;
@@ -329,14 +332,26 @@ footer {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "Psychologist Endocrine Counseling More"; }
-  .help .container_help .psychologist {
+  .help .container_help .Psychologist {
     grid-area: Psychologist; }
+    .help .container_help .Psychologist img {
+      width: 175px;
+      height: 236px; }
   .help .container_help .Endocrine {
     grid-area: Endocrine; }
+    .help .container_help .Endocrine img {
+      width: 175px;
+      height: 236px; }
   .help .container_help .Counseling {
     grid-area: Counseling; }
+    .help .container_help .Counseling img {
+      width: 175px;
+      height: 236px; }
   .help .container_help .More {
     grid-area: More; }
+    .help .container_help .More img {
+      width: 175px;
+      height: 236px; }
 
 /* aquí empieza el código de la página help*/
 .helppage {

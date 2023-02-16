@@ -1,6 +1,6 @@
 .news{
     .texto_news{
-        padding: 30px;
+        padding: 35px;
     }
     .carousel-inner{
         height: 500px;
@@ -68,6 +68,7 @@
     }
     .text_princ { 
         grid-area: text_princ;
+        align-self: flex-start;
         p{
             text-align: justify;
         }

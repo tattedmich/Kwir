@@ -1,7 +1,7 @@
 .help{
     .container_help{
     margin: 20px auto;
-    padding: 100px;
+    padding: 90px;
     width: 90%;
     height: 440px;
     display: grid;
@@ -11,17 +11,33 @@
     grid-auto-flow: row;
     grid-template-areas:
       "Psychologist Endocrine Counseling More";
-        .psychologist{
-            grid-area: Psychologist; 
+        .Psychologist{
+            grid-area: Psychologist;
+            img{
+                width: 175px;
+                height: 236px;
+            }
         }
         .Endocrine { 
-            grid-area: Endocrine; 
+            grid-area: Endocrine;
+            img{
+                width: 175px;
+                height: 236px;
+            }
         }
         .Counseling { 
             grid-area: Counseling; 
+            img{
+                width: 175px;
+                height: 236px;
+            }
         }
         .More {
             grid-area: More; 
+            img{
+                width: 175px;
+                height: 236px;
+            }
         }
     }
 }
