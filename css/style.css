@@ -1,0 +1,215 @@
+.poppins_14 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: regular; }
+
+.poppins_16 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: italic; }
+
+.poppins_17 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px; }
+
+.poppins_18 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: bold; }
+
+.poppins_18_black {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: bold; }
+
+.poppins_20 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
+
+.poppins_22 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px; }
+
+.poppins_27 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px; }
+
+.poppins_30 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px; }
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; }
+
+.intro {
+  background-color: #c9c5c5;
+  width: 100%;
+  height: 500px; }
+  .intro .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "Texto Imagen Imagen" ". . ." ". . ."; }
+    .intro .container .texto {
+      grid-area: Texto;
+      padding: 0; }
+    .intro .container h1 {
+      font-size: 80px;
+      font-family: 'Montserrat', sans-serif; }
+    .intro .container .imagen {
+      grid-area: Imagen; }
+
+/*Este es el estilo del Index*/
+.about {
+  height: 450px;
+  width: 100%;
+  padding: 30px; }
+  .about .container_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "imagen_about imagen_about texto_about texto_about texto_about link_about" "imagen_about imagen_about boton_about boton_about . link_about" ". . . . . ."; }
+    .about .container_about .imagen_about {
+      grid-area: imagen_about;
+      justify-self: flex-start; }
+    .about .container_about .texto_about {
+      grid-area: texto_about; }
+    .about .container_about .boton_about {
+      grid-area: boton_about; }
+    .about .container_about .link_about {
+      grid-area: link_about;
+      justify-self: center; }
+
+/*Este es el estilo de la pagina*/
+.aboutus .container_aboutus {
+  padding: 50px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 10px;
+  align-items: center;
+  grid-auto-flow: row;
+  grid-template-areas: "About_img1 about_text1 about_text1" "about_text2 about_text2 about_img2" "about_img3 about_text3 about_text3"; }
+  .aboutus .container_aboutus .About_img1 {
+    grid-area: About_img1; }
+  .aboutus .container_aboutus .about_text1 {
+    grid-area: about_text1; }
+  .aboutus .container_aboutus .about_img2 {
+    grid-area: about_img2; }
+  .aboutus .container_aboutus .about_text2 {
+    grid-area: about_text2; }
+  .aboutus .container_aboutus .about_img3 {
+    grid-area: about_img3; }
+  .aboutus .container_aboutus .about_text3 {
+    grid-area: about_text3; }
+
+.community {
+  background-color: #c9c5c5;
+  height: auto; }
+  .community .container_community {
+    padding: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "join_image join_image text_join text_join text_join" "join_image join_image join_button . ."; }
+    .community .container_community .text_join {
+      grid-area: text_join; }
+    .community .container_community .join_image {
+      grid-area: join_image; }
+    .community .container_community .join_button {
+      grid-area: join_button; }
+
+.contact {
+  width: 100%;
+  height: 540px; }
+  .contact .container_contact {
+    margin: 10px auto;
+    padding: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "link_contact texto_contact texto_contact imagen_contact imagen_contact" "link_contact form_contact form_contact imagen_contact imagen_contact" ". . . . ."; }
+    .contact .container_contact .link_contact {
+      grid-area: link_contact; }
+    .contact .container_contact .texto_contact {
+      grid-area: texto_contact; }
+    .contact .container_contact .imagen_contact {
+      grid-area: imagen_contact; }
+    .contact .container_contact .form_contact {
+      grid-area: form_contact; }
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: auto; }
+  footer .container_footer {
+    padding: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 0.8fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "Terms . . logo_footer" "Terms rrss rrss logo_footer"; }
+    footer .container_footer .logo_footer {
+      grid-area: logo_footer; }
+    footer .container_footer .rrss {
+      grid-area: rrss; }
+      footer .container_footer .rrss ul {
+        list-style-type: none;
+        display: flex;
+        padding: 35px;
+        justify-content: center; }
+        footer .container_footer .rrss ul li {
+          padding: 20px; }
+  footer .Terms {
+    grid-area: Terms; }
+    footer .Terms ul li {
+      list-style-type: none;
+      padding: 10px; }
+      footer .Terms ul li a {
+        color: white;
+        text-decoration: none; }
+
+.news .texto_news {
+  padding: 30px; }
+
+.news .carousel-inner {
+  height: 500px; }
+
+.news .carousel-control-prev-icon, .news .carousel-control-next-icon {
+  filter: invert(108%); }
+
+.help .container_help {
+  margin: 20px auto;
+  padding: 100px;
+  width: 90%;
+  height: 440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Psychologist Endocrine Counseling More"; }
+  .help .container_help .psychologist {
+    grid-area: Psychologist; }
+  .help .container_help .Endocrine {
+    grid-area: Endocrine; }
+  .help .container_help .Counseling {
+    grid-area: Counseling; }
+  .help .container_help .More {
+    grid-area: More; }

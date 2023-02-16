@@ -1,0 +1,11 @@
+.news{
+    .texto_news{
+        padding: 30px;
+    }
+    .carousel-inner{
+        height: 500px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        filter: invert(108%);
+    }
+}

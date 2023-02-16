@@ -1,0 +1,27 @@
+.help{
+    .container_help{
+    margin: 20px auto;
+    padding: 100px;
+    width: 90%;
+    height: 440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Psychologist Endocrine Counseling More";
+        .psychologist{
+            grid-area: Psychologist; 
+        }
+        .Endocrine { 
+            grid-area: Endocrine; 
+        }
+        .Counseling { 
+            grid-area: Counseling; 
+        }
+        .More {
+            grid-area: More; 
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.community{
+    background-color: #c9c5c5;
+    height: auto;
+    .container_community{
+        padding: 20px;
+        width: 90%;  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "join_image join_image text_join text_join text_join"
+        "join_image join_image join_button . .";
+        .text_join { 
+            grid-area: text_join; 
+        }
+        .join_image { 
+            grid-area: join_image; 
+        }
+        .join_button { 
+            grid-area: join_button; 
+        }
+    }
+}
