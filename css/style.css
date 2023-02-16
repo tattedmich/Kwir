@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .poppins_14 {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
@@ -11,6 +12,11 @@
 .poppins_17 {
   font-family: 'Poppins', sans-serif;
   font-size: 17px; }
+
+.poppins_17b {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: bold; }
 
 .poppins_18 {
   font-family: 'Poppins', sans-serif;
@@ -90,12 +96,14 @@
 
 /*Este es el estilo de la pagina*/
 .aboutus .container_aboutus {
-  padding: 50px;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   width: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 10px;
+  gap: 0px 5px;
   align-items: center;
   grid-auto-flow: row;
   grid-template-areas: "About_img1 about_text1 about_text1" "about_text2 about_text2 about_img2" "about_img3 about_text3 about_text3"; }
@@ -103,14 +111,20 @@
     grid-area: About_img1; }
   .aboutus .container_aboutus .about_text1 {
     grid-area: about_text1; }
+    .aboutus .container_aboutus .about_text1 p {
+      text-align: justify; }
   .aboutus .container_aboutus .about_img2 {
     grid-area: about_img2; }
   .aboutus .container_aboutus .about_text2 {
     grid-area: about_text2; }
+    .aboutus .container_aboutus .about_text2 p {
+      text-align: justify; }
   .aboutus .container_aboutus .about_img3 {
     grid-area: about_img3; }
   .aboutus .container_aboutus .about_text3 {
     grid-area: about_text3; }
+    .aboutus .container_aboutus .about_text3 p {
+      text-align: justify; }
 
 .community {
   background-color: #c9c5c5;
@@ -130,6 +144,32 @@
       grid-area: join_image; }
     .community .container_community .join_button {
       grid-area: join_button; }
+
+/* aquí empieza el estilo de community*/
+.container_communitypage {
+  padding: 70px;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "whatsapp_icon img_community" "join_button img_community" "text_whatsapp img_community"; }
+  .container_communitypage .whatsapp_icon {
+    grid-area: whatsapp_icon;
+    justify-self: center; }
+  .container_communitypage .join_button {
+    grid-area: join_button;
+    justify-self: center; }
+  .container_communitypage .text_whatsapp {
+    grid-area: text_whatsapp;
+    justify-self: center; }
+    .container_communitypage .text_whatsapp p {
+      text-align: center; }
+  .container_communitypage .img_community {
+    grid-area: img_community;
+    justify-self: center; }
 
 .contact {
   width: 100%;
@@ -152,6 +192,28 @@
       grid-area: imagen_contact; }
     .contact .container_contact .form_contact {
       grid-area: form_contact; }
+
+/* aquí empieza el estilo de contact*/
+.container_contactpage {
+  padding: 20px;
+  width: 95%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.4fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "img_cont img_cont text_cont text_cont" "img_cont img_cont form_cont form_cont" "img_cont img_cont text2_cont text2_cont"; }
+  .container_contactpage .text_cont {
+    grid-area: text_cont; }
+  .container_contactpage .img_cont {
+    grid-area: img_cont; }
+  .container_contactpage .form_cont {
+    grid-area: form_cont; }
+  .container_contactpage .text2_cont {
+    grid-area: text2_cont; }
+    .container_contactpage .text2_cont p {
+      text-align: justify; }
 
 footer {
   background-color: black;
@@ -194,6 +256,68 @@ footer {
 .news .carousel-control-prev-icon, .news .carousel-control-next-icon {
   filter: invert(108%); }
 
+/* aquí empieza el código de la página news*/
+.container_pagenews {
+  margin: 10px auto;
+  padding: 40px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  align-items: center;
+  gap: 15px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "img_princ img_princ img_princ img1 text_img1 text_img1" "img_princ img_princ img_princ img2 text_img2 text_img2" "img_princ img_princ img_princ img3 text_img3 text_img3" "text_princ text_princ text_princ img4 text_img4 text_img4"; }
+  .container_pagenews .img1 {
+    grid-area: img1; }
+    .container_pagenews .img1 img {
+      width: 210px;
+      height: 115px;
+      border-radius: 5%; }
+  .container_pagenews .img2 {
+    grid-area: img2; }
+    .container_pagenews .img2 img {
+      width: 210px;
+      height: 115px;
+      border-radius: 5%; }
+  .container_pagenews .img3 {
+    grid-area: img3; }
+    .container_pagenews .img3 img {
+      width: 210px;
+      height: 115px;
+      border-radius: 5%; }
+  .container_pagenews .img4 {
+    grid-area: img4; }
+    .container_pagenews .img4 img {
+      width: 210px;
+      height: 115px;
+      border-radius: 5%; }
+  .container_pagenews .img_princ {
+    grid-area: img_princ; }
+    .container_pagenews .img_princ img {
+      width: 630px;
+      height: 350px; }
+  .container_pagenews .text_princ {
+    grid-area: text_princ; }
+    .container_pagenews .text_princ p {
+      text-align: justify; }
+  .container_pagenews .text_img1 {
+    grid-area: text_img1; }
+    .container_pagenews .text_img1 p {
+      text-align: justify; }
+  .container_pagenews .text_img2 {
+    grid-area: text_img2; }
+    .container_pagenews .text_img2 p {
+      text-align: justify; }
+  .container_pagenews .text_img3 {
+    grid-area: text_img3; }
+    .container_pagenews .text_img3 p {
+      text-align: justify; }
+  .container_pagenews .text_img4 {
+    grid-area: text_img4; }
+    .container_pagenews .text_img4 p {
+      text-align: justify; }
+
 .help .container_help {
   margin: 20px auto;
   padding: 100px;
@@ -213,3 +337,14 @@ footer {
     grid-area: Counseling; }
   .help .container_help .More {
     grid-area: More; }
+
+/* aquí empieza el código de la página help*/
+.helppage {
+  align-items: center;
+  display: flex;
+  margin: 10px auto;
+  padding: 50px;
+  justify-content: space-around; }
+  .helppage img {
+    width: fit-content;
+    align-self: center; }

@@ -23,3 +23,40 @@
         }
     }
 }
+/* aquí empieza el estilo de community*/
+
+.container_communitypage {
+    padding: 70px;  
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "whatsapp_icon img_community"
+      "join_button img_community"
+      "text_whatsapp img_community";
+    .whatsapp_icon { 
+        grid-area: whatsapp_icon; 
+        justify-self: center; 
+    }
+    .join_button { 
+        grid-area: join_button; 
+        justify-self: center; 
+    }
+      
+    .text_whatsapp { 
+        grid-area: text_whatsapp; 
+        justify-self:center; 
+        p{
+            text-align: center;
+        }
+    }
+      
+    .img_community { 
+        grid-area: img_community; 
+        justify-self: center; 
+    }
+}
