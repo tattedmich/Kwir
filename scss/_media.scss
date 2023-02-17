@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
     main{
         .intro{
-            background-attachment: fixed;
+            background-position: center;
             height: 375px;
             .container{
                 h1{
@@ -165,29 +165,142 @@
         "img4"
         "text_img4";
         .img1{
+            margin-left: 125px;
             img{
                 width: 400px;
                 height: 210px;
             }
         }
         .img2{
+            margin-left: 125px;
             img{
                 width: 400px;
                 height: 210px;
             }
         }
         .img3{
+            margin-left: 125px;
             img{
                 width: 400px;
                 height: 210px;
             }
         }
         .img4{
-            img{
+            margin-left: 125px;
+            img{ 
                 width: 400px;
                 height: 210px;
             }
         }
         
     }
+    .helppage{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+        grid-template-areas: 
+        "psych endo"
+        "coun mor";
+        .psych{
+            grid-area: psych;
+        }
+        .endo{
+            grid-area: endo;
+        }
+        .coun{
+            grid-area: coun;
+        }
+        .mor{
+            grid-area: mor;
+        }
+    }
+    .contactpage{
+        background-image: url(../img/Contact_Background_Pages_OP.svg);
+        .container_contactpage{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr 0.5fr;
+            row-gap: 20px;
+            grid-template-areas: 
+            "text_cont"
+            "form_cont"
+            "text2_cont";
+            .text_cont{
+                p{
+                    text-align: center;
+                }
+            }
+            .text2_cont{
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .communitypage{
+        background-image: url(../img/Background_Community_OP.svg);
+        .container_communitypage{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.5fr 1fr;
+            grid-template-areas: 
+            "whatsapp_icon"
+            "join_button"
+            "text_whatsapp";
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    main{
+        .about{
+            height: 350px;
+        }
+        .help{
+            margin-left: 0px;
+            margin-right: 80px;
+        }
+        .contact{
+            height: 510px;
+        }
+    }
+    .aboutus{
+        .container_aboutus{
+            img{
+                width: 50%;
+                margin-left: 130px;
+            }
+        }
+    }
+    .container_pagenews{
+        .img1{
+            margin-left: 65px;
+        }
+        .img2{
+            margin-left: 65px;
+        }
+        .img3{
+            margin-left: 65px;
+        }
+        .img4{
+            margin-left: 65px;
+        }
+        
+    }
+    .helppage{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-left: 125px;
+        row-gap: 20px;
+        grid-template-areas: 
+        "psych"
+        "endo"
+        "coun"
+        "mor";
+    }
+    .communitypage{
+        background-position: left center;
+        height: 500px;
+    }
+        
+    
 }
