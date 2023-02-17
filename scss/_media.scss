@@ -432,4 +432,17 @@
             }
         }
     }
+    .aboutus{
+        .container_aboutus{
+            grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+            img{
+                width: 75%;
+                margin-left: 40px;
+            }
+            .poppins_17{
+                font-size: 15px;
+                text-align: justify;
+            }
+        }
+    }
 }

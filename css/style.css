@@ -626,7 +626,15 @@ footer {
         margin-left: 30px; }
       footer .container_footer .Terms ul {
         margin-left: 0;
-        text-align: center; } }
+        text-align: center; }
+  .aboutus .container_aboutus {
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr; }
+    .aboutus .container_aboutus img {
+      width: 75%;
+      margin-left: 40px; }
+    .aboutus .container_aboutus .poppins_17 {
+      font-size: 15px;
+      text-align: justify; } }
 
 /* hovers del navbar*/
 header nav div ul li a:hover {
