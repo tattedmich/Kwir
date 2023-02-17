@@ -445,4 +445,53 @@
             }
         }
     }
+    .container_pagenews{
+        padding: 20px;
+        row-gap: 20px;
+        .img1{
+            margin-left: 40px;
+            img{
+                width: 75%;
+                height: 75%;
+            }
+        }
+        .img2{
+            margin-left: 40px;
+            img{
+                width: 75%;
+                height: 75%;
+            }
+        }
+        .img3{
+            margin-left: 40px;
+            img{
+                width: 75%;
+                height: 75%;
+            }
+        }
+        .img4{
+            margin-left: 40px;
+            img{ 
+                width: 75%;
+                height: 75%;
+            }
+        }
+        .img_princ{
+            margin-left: 40px;
+            img{
+                width: 75%;
+                height: 75%;
+            }
+        }
+        
+    }
+    .helppage{
+        margin-left: 20px;
+    }
+    .contactpage{
+        height: 700px;
+    }
+    .communitypage{
+        height: 550px;
+    }
 }

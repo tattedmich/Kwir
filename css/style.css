@@ -130,7 +130,6 @@
     .aboutus .container_aboutus .about_text3 p {
       text-align: justify; }
 
-/* hovers*/
 .community {
   background-color: #c9c5c5;
   height: auto; }
@@ -634,7 +633,41 @@ footer {
       margin-left: 40px; }
     .aboutus .container_aboutus .poppins_17 {
       font-size: 15px;
-      text-align: justify; } }
+      text-align: justify; }
+  .container_pagenews {
+    padding: 20px;
+    row-gap: 20px; }
+    .container_pagenews .img1 {
+      margin-left: 40px; }
+      .container_pagenews .img1 img {
+        width: 75%;
+        height: 75%; }
+    .container_pagenews .img2 {
+      margin-left: 40px; }
+      .container_pagenews .img2 img {
+        width: 75%;
+        height: 75%; }
+    .container_pagenews .img3 {
+      margin-left: 40px; }
+      .container_pagenews .img3 img {
+        width: 75%;
+        height: 75%; }
+    .container_pagenews .img4 {
+      margin-left: 40px; }
+      .container_pagenews .img4 img {
+        width: 75%;
+        height: 75%; }
+    .container_pagenews .img_princ {
+      margin-left: 40px; }
+      .container_pagenews .img_princ img {
+        width: 75%;
+        height: 75%; }
+  .helppage {
+    margin-left: 20px; }
+  .contactpage {
+    height: 700px; }
+  .communitypage {
+    height: 550px; } }
 
 /* hovers del navbar*/
 header nav div ul li a:hover {
