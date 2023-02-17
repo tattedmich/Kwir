@@ -448,7 +448,7 @@ footer {
       width: 180px;
       height: 185px; }
   main .contact {
-    height: 450px; }
+    height: 500px; }
     main .contact .container_contact {
       grid-template-areas: "link_contact texto_contact texto_contact texto_contact ." "link_contact form_contact form_contact form_contact ." ". . . . ."; }
   main .community {
