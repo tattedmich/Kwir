@@ -24,6 +24,9 @@
         }
         .boton_about{
             grid-area: boton_about;
+            &:hover{
+                opacity: 50%;
+            }
         }
         .link_about{
             grid-area: link_about;
@@ -80,10 +83,7 @@
             }  
             
         }
-    }
-      
-      
-      
-      
-      
+    }     
 }
+/* hovers*/
+

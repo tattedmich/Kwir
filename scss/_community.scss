@@ -21,6 +21,9 @@
         }
         .join_button { 
             grid-area: join_button; 
+            &:hover{
+                opacity: 50%;
+            }
         }
     }
 }

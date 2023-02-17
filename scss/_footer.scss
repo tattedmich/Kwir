@@ -4,10 +4,11 @@ footer{
     height: auto;
     .container_footer {
         padding: 20px;
-        width: 90%;  
+        width: 95%;  
         display: grid;
         grid-template-columns: 1.5fr 0.8fr 0.8fr 1.5fr;
         grid-template-rows: 1fr 1fr;
+        align-self: auto;
         gap: 0px 0px;
         grid-template-areas:
           "Terms . . logo_footer"
@@ -15,6 +16,7 @@ footer{
           
         .logo_footer{
                 grid-area: logo_footer;
+                margin-left: 200px
             }
             
         .rrss { 
@@ -26,6 +28,11 @@ footer{
                 justify-content: center;
                 li{
                     padding: 20px;
+                    img{
+                        &:hover{
+                            opacity: 50%;
+                        }
+                    }
                 }
             }
         }
@@ -39,6 +46,9 @@ footer{
                     a{
                         color: white;
                         text-decoration: none;
+                        &:hover{
+                            opacity: 50%;
+                        }
                     }
                 }
             }

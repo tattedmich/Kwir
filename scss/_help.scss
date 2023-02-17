@@ -1,45 +1,57 @@
 .help{
     .container_help{
-    margin: 20px auto;
-    padding: 90px;
-    width: 90%;
-    height: 440px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Psychologist Endocrine Counseling More";
-        .Psychologist{
-            grid-area: Psychologist;
-            img{
-                width: 175px;
-                height: 236px;
+        margin-left: 150px;
+        padding: 90px;
+        width: 90%;
+        height: 440px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "Psychologist Endocrine Counseling More";
+            .Psychologist{
+                grid-area: Psychologist;
+                img{
+                    width: 175px;
+                    height: 236px;
+                    &:hover{
+                        opacity: 50%;
+                    }
+                }
+            }
+            .Endocrine { 
+                grid-area: Endocrine;
+                img{
+                    width: 175px;
+                    height: 236px;
+                    &:hover{
+                        opacity: 50%;
+                    }
+                }
+            }
+            .Counseling { 
+                grid-area: Counseling; 
+                img{
+                    width: 175px;
+                    height: 236px;
+                    &:hover{
+                        opacity: 50%;
+                    }
+                }
+            }
+            .More {
+                grid-area: More; 
+                img{
+                    width: 175px;
+                    height: 236px;
+                    &:hover{
+                        opacity: 50%;
+                    }
+                }
             }
         }
-        .Endocrine { 
-            grid-area: Endocrine;
-            img{
-                width: 175px;
-                height: 236px;
-            }
-        }
-        .Counseling { 
-            grid-area: Counseling; 
-            img{
-                width: 175px;
-                height: 236px;
-            }
-        }
-        .More {
-            grid-area: More; 
-            img{
-                width: 175px;
-                height: 236px;
-            }
-        }
-    }
 }
 
 /* aquí empieza el código de la página help*/
