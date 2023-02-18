@@ -4,7 +4,7 @@
     height: 450px;
     width: 95%;
     margin: 10px auto;
-    padding: 30px;
+    padding: 20px;
     .container_about{
         display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -20,7 +20,7 @@
         justify-self: flex-start; 
         }
         .texto_about { 
-            grid-area: texto_about;    
+            grid-area: texto_about;
         }
         .boton_about{
             grid-area: boton_about;
